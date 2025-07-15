@@ -9,7 +9,7 @@ class Calc
 }
 class AdvCalc extends Calc
 {
-    @Override
+    @Override                  //Here, @Override is metadata — it tells the compiler that this method overrides a method from the superclass.
     public int add(int a , int b)//ye vala run hoga
     {
         return a+b+1;
@@ -30,6 +30,10 @@ class AdvCalc extends Calc
 /*1)
 What is Annotations?
 -- annotation is type of comment which is used to provide meta data to the compiler and JVM about the program.
+
+In Java, metadata refers to data that provides information about program elements (like classes, methods, variables) but is not the actual program logic itself.
+
+Java uses annotations to define and process metadata.
 
 Basic difference between comment and annotations
 -- annotation is used to provide meta data to the compiler and JVM about the program but comment is used to provide information to the programmer.
